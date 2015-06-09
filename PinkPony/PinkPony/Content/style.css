@@ -1,8 +1,7 @@
 @font-face {
     font-family: 'futura_md_btmedium';
     src: url('/Content/fonts/futura-medium.eot');
-    src: url('/Content/fonts/futura-medium.eot?#iefix') format('embedded-opentype'), url('/Content/fonts/futura-medium.woff') format('woff'), 
-        url('/Content/fonts/futura-medium.ttf') format('truetype'), url('/Content/fonts/futura-medium.svg#futura_md_btmedium') format('svg');
+    src: url('/Content/fonts/futura-medium.eot?#iefix') format('embedded-opentype'), url('/Content/fonts/futura-medium.woff') format('woff'), url('/Content/fonts/futura-medium.ttf') format('truetype'), url('/Content/fonts/futura-medium.svg#futura_md_btmedium') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -10,8 +9,7 @@
 @font-face {
     font-family: 'feniceregular';
     src: url('/Content/fonts/fenice-regular.eot');
-    src: url('/Content/fonts/fenice-regular.eot?#iefix') format('embedded-opentype'), url('/Content/fonts/fenice-regular.woff') format('woff'), 
-        url('/Content/fonts/fenice-regular.ttf') format('truetype'), url('/Content/fonts/fenice-regular.svg#feniceregular') format('svg');
+    src: url('/Content/fonts/fenice-regular.eot?#iefix') format('embedded-opentype'), url('/Content/fonts/fenice-regular.woff') format('woff'), url('/Content/fonts/fenice-regular.ttf') format('truetype'), url('/Content/fonts/fenice-regular.svg#feniceregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -332,12 +330,14 @@ footer {
     margin: 0 auto;
 }
 
+    /*logo - brand - pink pony logo*/
     .nav-side-menu .brand {
-        /*background-color: #E3789C;*/
-        padding: 45px 20px;
+        background: url(/Content/images/pp-logo.png) no-repeat center center;
+        background-size: contain;
         display: block;
     }
 
+    /*toggle-btn mobile*/
     .nav-side-menu .toggle-btn {
         display: none;
     }
@@ -567,6 +567,7 @@ h5 {
 
     .header .thumbnails * {
         color: #FFF;
+        font-weight: normal;
     }
 
     /*.header .thumbnails [class*='col-md'] {
@@ -672,12 +673,13 @@ h5 {
     .hero-img.article {
         background: url(/Content/images/img-detail.jpg) no-repeat center center;
         background-size: cover;
+        margin:0;
     }
 
 .add-comment {
     display: block;
     cursor: pointer;
-    background: url(../images/add-comment.jpg) no-repeat center right;
+    background: url(/Content//add-comment.jpg) no-repeat center right;
     height: 56px;
     width: 100%;
     margin-top: 40px;
@@ -921,6 +923,15 @@ button, input, optgroup, select, textarea {
 }
 
 @media (min-width: 768px) {
+
+
+    /*MENU LOGO BIG*/
+    .nav-side-menu .brand {
+        max-width: 220px;
+        margin: 45px 20px;
+        height: 60px;
+    }
+
     .social {
         position: fixed;
         z-index: 999;
@@ -1075,39 +1086,46 @@ button, input, optgroup, select, textarea {
         margin-top: 15px;
     }
 
+    /*BTN MENU TOGGLE MOBILE*/
     .nav-side-menu .toggle-btn {
         display: block;
         cursor: pointer;
         position: absolute;
-        right: 15px;
-        top: 14px;
+        top: 8px;
+        right: 12px;
         z-index: 10 !important;
         padding: 5px;
         color: #FFF;
         width: 40px;
-        height: 40px;
+        height: 34px;
         text-align: center;
-        font-size: 1.55em;
+        font-size: 25px;
         display: block;
     }
 
+    /*LOGO BRAND SMALL MOBILE*/
     .nav-side-menu .brand {
-        display: inline-block;
-        margin: 0 -2px;
-        padding: 8px 20px 10px 20px;
+        display: block;
+        margin: 0px 15px 0px 23px;
+        height: 50px;
+        background-position: left center;
+        background-size: 155px;
     }
+
 
     /*HERO IMG*/
-
-
-    .hero-img h1 {
-        margin-bottom: 10px;
-        font-size: 30px;
+    .hero-img {
+        margin-top: 50px;
     }
 
-    .hero-img p {
-        font-size: 12px;
-    }
+        .hero-img h1 {
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        .hero-img p {
+            font-size: 12px;
+        }
 
     /*.header .thumbnails [class*='col-md'] {
         height: 200px;
@@ -1119,15 +1137,6 @@ button, input, optgroup, select, textarea {
 @media (max-width: 520px) {
     footer [class*='col-xs-'] {
         width: 100%;
-    }
-
-    .nav-side-menu .toggle-btn {
-        top: 9px;
-        right: 12px;
-    }
-
-    .nav-side-menu .brand {
-        padding: 2px 15px 4px 15px;
     }
 
     .header .thumbnails .item h3 {
