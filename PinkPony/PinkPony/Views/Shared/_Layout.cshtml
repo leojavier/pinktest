@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+
+        @RenderBody()
+        <footer>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-2 col-xs-4">
+                        <h6>UNITED STATES</h6>
+                        <ul>
+                            <li><a href="#">Change Country</a></li>
+                            <li><a href="#">Find a Store</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-2 col-xs-4">
+                        <h6>CUSTOMER ASSISTANCE</h6>
+                        <ul>
+                            <li><a href="#">Customer Assistance</a></li>
+                            <li><a href="#">Email Us</a></li>
+                            <li><a href="#">Payment Methods</a></li>
+                            <li>Tel. 888-475-7674</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-2 col-xs-4">
+                        <h6>SHIPPING & RETURNS</h6>
+                        <ul>
+                            <li><a href="#">Track My Orders / Returns</a></li>
+                            <li><a href="#">Shipping Rates</a></li>
+                            <li><a href="#">Return & Exchanges</a></li>
+                            <li><a href="#">Us Shipping Only</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-2 col-xs-4">
+                        <h6>COMPANY INORMATION</h6>
+                        <ul>
+                            <li><a href="#">About Ralph Lauren</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">California Transparency Act</a></li>
+                            <li><a href="#">Canadian Private Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-4 col-xs-8">
+                        <h6>RECEIVE RALPH LAUREN EMAIL UPDATES</h6>
+                        <ul>
+                            <li><input type="email"><input type="submit" class="submit-mail" value=" SUSCRIBE NOW"></li>
+                            <li>You can unsubscribe at any time</li>
+                            <li><a href="#">Click here tiread Ralph Lauren’s Privacy Notice</a>, <a href="#">Or Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div><!--row-->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h6 class="text-center"><a href="#" style="margin-right:10px">Gift Cards</a> <a href="#" style="margin-right:10px">Site Map</a> <a href="#" style="margin-right:10px">Provacy Notice Terms of Use</a> Copyright 2015 Ralph Lauren Media LLC</h6>
+                    </div>
+                </div><!--row-->
+
+            </div><!--container-->
+        </footer>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
