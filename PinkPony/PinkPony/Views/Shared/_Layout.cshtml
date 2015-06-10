@@ -72,24 +72,24 @@
             </div><!--container-->
         </footer>
 
-
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 
     <script type="text/javascript">
-    // Hide header bg-video when window.screen.width resized to  < 760px
-    $(function () {
-        $(window).resize(function () {
-            var videoTarget = $('#event-video-target');
-            if ( $(window).width() < 760 ) {
-                videoTarget.hide();
-            } else {
-                videoTarget.show();
-            }
+
+        // Hide header bg-video when window.screen.width resized to  < 760px
+        $(function(){
+            $(window).resize(function(){
+                var videoTarget = $('#event-video-target');
+                if( $(window).width() < 760 ) {
+                    videoTarget.hide();
+                }else{
+                    videoTarget.show();
+                }
+            });
         });
-    });
+
     </script>
 </body>
 </html>
