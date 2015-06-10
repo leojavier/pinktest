@@ -79,12 +79,14 @@
     @RenderSection("scripts", required: false)
 
     <script type="text/javascript">
+    // Hide header bg-video when window.screen.width resized to  < 760px
     $(function () {
         $(window).resize(function () {
+            var videoTarget = $('#event-video-target');
             if ( $(window).width() < 760 ) {
-                $('#event-video-target').hide();
+                videoTarget.hide();
             } else {
-                $('#event-video-target').show();
+                videoTarget.show();
             }
         });
     });
