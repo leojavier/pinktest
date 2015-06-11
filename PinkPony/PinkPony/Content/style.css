@@ -682,10 +682,10 @@ h5 {
     background: url(images/add-comment.jpg) no-repeat center right;
     height: 56px;
     width: 100%;
+     border-top: solid 3px #e3789c;
 }
 
 .author {
-    border-bottom: solid 3px #e3789c;
     display: block;
     position: relative;
     overflow: hidden;
@@ -850,7 +850,7 @@ article p {
 }
 
 article .post-date, article .by, article .pre-pink {
-    font-size: 0.9em;
+    font-size: 14px;
 }
 
 article .post-date {
@@ -1029,7 +1029,7 @@ button, input, optgroup, select, textarea {
 }
 /*SMALLER SCREENS*/
 @media (max-width: 1024px) {
-   /* .hero-img .bottom-content {
+    /* .hero-img .bottom-content {
         max-width: 430px !important;
     }
 
@@ -1053,12 +1053,20 @@ button, input, optgroup, select, textarea {
 
 
 @media (max-width: 767px) {
+    .hero-img {
+        margin-top: 50px;
+    }
 
+        .hero-img.article {
+            margin-top: 0px;
+        }
+
+    article {
+        font-size:0.875em
+    }
 
     blockquote p {
-        line-height: 1.5;
-        letter-spacing: 1px;
-        font-size: 6em;
+        font-size:1.65em
     }
 
     section, footer {
@@ -1159,14 +1167,22 @@ button, input, optgroup, select, textarea {
 
 @media (max-width: 480px) {
     .hero-img h1 {
-        font-size:2.5em
+        font-size: 2.5em;
     }
-     }
+    .author .pic, .author .details {
+        float:none;
+    }
+    .author .details {
+        padding:5px 0 15px 0;
+        font-size:13px;
+    }
+}
 
 @media (max-width: 320px) {
-     .hero-img h1 {
-        font-size:2.25em
+    .hero-img h1 {
+        font-size: 2.25em;
     }
+
     .header .thumbnails .item h3 {
         font-size: 16px;
         font-weight: 400;
