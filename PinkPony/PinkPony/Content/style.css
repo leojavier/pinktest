@@ -280,8 +280,8 @@ footer {
         footer input.submit-mail {
             text-transform: uppercase;
             color: #FFF;
-            border-color: #000;
-            background: #000;
+            border-color: #555;
+            background: #555;
             line-height: 13px;
         }
 
@@ -673,31 +673,32 @@ h5 {
     .hero-img.article {
         background: url(/Content/images/img-detail.jpg) no-repeat center center;
         background-size: cover;
-        margin:0;
+        margin: 0;
     }
 
 .add-comment {
     display: block;
     cursor: pointer;
-    background: url(/Content//add-comment.jpg) no-repeat center right;
+    background: url(images/add-comment.jpg) no-repeat center right;
     height: 56px;
     width: 100%;
-    margin-top: 40px;
 }
 
 .author {
-    border-top: solid 3px #e3789c;
+    border-bottom: solid 3px #e3789c;
     display: block;
     position: relative;
     overflow: hidden;
     color: #000;
     font-size: 16px;
+    margin-top: 40px;
+    text-transform:uppercase!important;
 }
 
     .author .pic {
         float: left;
-        width: 110px;
-        height: 110px;
+        width: 100px;
+        height: 95px;
         overflow: hidden;
         margin-right: 15px;
     }
@@ -707,7 +708,7 @@ h5 {
     }
 
         .author .details h4 {
-            margin: 20px 0 0 0;
+            margin: 10px 0 5px 0;
             font-family: 'futura_md_btmedium', Helvetica, Arial, sans-serif;
             font-size: 1.25em;
             letter-spacing: 1px;
@@ -718,7 +719,6 @@ h5 {
             font-size: 0.8125em;
             letter-spacing: 1px;
             display: block;
-            margin-bottom: 15px;
         }
 
             .author .details p span {
@@ -832,50 +832,60 @@ h5 {
 
 /*ARTICLES - TEXTS FORMAT -ETC
 -------------------------------------------------- */
-.post-date {
-    font-size: 12px;
-}
 
 a h1:hover, a h2:hover, a h3:hover {
     color: #E3789C;
 }
 
+article .post-title {
+    font-size: 1.875em;
+}
+
 article p {
-    font-size: 1em;
-    line-height: 1.75;
-    margin-bottom: 1.5em;
+    font-size: 1.35em;
+    line-height: 1.5;
+    margin-bottom: 1em;
     color: #000;
+    letter-spacing: -1px;
+}
+
+article .post-date, article .by, article .pre-pink {
+    font-size: 0.9em;
+}
+
+article .post-date {
+    margin-bottom: 0;
+}
+
+article .by {
+    margin-top: 0;
 }
 
 blockquote {
-    text-align: center;
     border: 0;
-    letter-spacing: 2px;
     position: relative;
     display: block;
     padding: 0 15px 10px 0;
     margin: 0;
     margin-bottom: 15px;
-    font-size: 26px;
-    color: #777;
 }
 
     blockquote p {
-        text-align: center;
         margin: 0;
-        color: #777;
-        line-height: 1.5;
+        font-size: 1.875em;
+        letter-spacing: 2px;
     }
 
     blockquote i {
-        font-family: Georgia;
-        font-size: 5.5em;
+        font-family: 'feniceregular', Times, Times New Roman, serif;
+        font-style: normal;
+        font-size: 12em;
         display: block;
         height: 55px;
-        z-index: 1;
         color: #000;
-        overflow: hidden;
-        padding-right: 8px;
+        margin-bottom:15px;
+        line-height:1;
+          margin-bottom: 0.15em;
     }
 
 
@@ -885,7 +895,7 @@ blockquote {
 
     blockquote .close-q {
         text-align: right;
-        margin-top: -25px;
+        margin-bottom:0
     }
 
     blockquote .people {
