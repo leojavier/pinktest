@@ -682,7 +682,7 @@ h5 {
     background: url(images/add-comment.jpg) no-repeat center right;
     height: 56px;
     width: 100%;
-     border-top: solid 3px #e3789c;
+    border-top: solid 3px #e3789c;
 }
 
 .author {
@@ -739,7 +739,7 @@ h5 {
 -------------------------------------------------- */
 
 /*text on photos etc*/
-.bottom-content, .pink-gradient {
+.bottom-content, .pink-gradient, .white-bar {
     position: absolute;
     width: 100%;
     left: 0;
@@ -772,9 +772,11 @@ h5 {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e3789c', endColorstr='#e6e3789c',GradientType=0 ); /* IE6-9 */
 }
 
-.article .pink-gradient {
+.white-bar {
+    background: rgba(255,255,255,0.20);
+    z-index: 1;
+    height: 50%;
 }
-
 /*HOVER IMG EFFECT
 -------------------------------------------------- */
 .smoke-caption {
@@ -1062,11 +1064,11 @@ button, input, optgroup, select, textarea {
         }
 
     article {
-        font-size:0.875em
+        font-size: 0.875em;
     }
 
     blockquote p {
-        font-size:1.65em
+        font-size: 1.65em;
     }
 
     section, footer {
@@ -1169,12 +1171,14 @@ button, input, optgroup, select, textarea {
     .hero-img h1 {
         font-size: 2.5em;
     }
+
     .author .pic, .author .details {
-        float:none;
+        float: none;
     }
+
     .author .details {
-        padding:5px 0 15px 0;
-        font-size:13px;
+        padding: 5px 0 15px 0;
+        font-size: 13px;
     }
 }
 
