@@ -692,7 +692,7 @@ h5 {
     color: #000;
     font-size: 16px;
     margin-top: 40px;
-    text-transform:uppercase!important;
+    text-transform: uppercase !important;
 }
 
     .author .pic {
@@ -756,7 +756,7 @@ h5 {
 
 .bottom-content {
     z-index: 3;
-    max-width: 640px;
+    /*max-width: 640px;*/
     padding: 15px;
 }
 
@@ -883,9 +883,9 @@ blockquote {
         display: block;
         height: 55px;
         color: #000;
-        margin-bottom:15px;
-        line-height:1;
-          margin-bottom: 0.15em;
+        margin-bottom: 15px;
+        line-height: 1;
+        margin-bottom: 0.15em;
     }
 
 
@@ -895,7 +895,7 @@ blockquote {
 
     blockquote .close-q {
         text-align: right;
-        margin-bottom:0
+        margin-bottom: 0;
     }
 
     blockquote .people {
@@ -953,13 +953,13 @@ button, input, optgroup, select, textarea {
         background: url(/Content/images/social.jpg) no-repeat center bottom;
     }
 
-    .top-content h4 {
+    /*.top-content h4 {
         font-size: 1.5em;
     }
 
     .top-content .pre-tittle::after {
         width: 62px;
-    }
+    }*/
 
     /*EXCEPTIONS*/
     .display-table {
@@ -1029,7 +1029,7 @@ button, input, optgroup, select, textarea {
 }
 /*SMALLER SCREENS*/
 @media (max-width: 1024px) {
-    .hero-img .bottom-content {
+   /* .hero-img .bottom-content {
         max-width: 430px !important;
     }
 
@@ -1040,7 +1040,7 @@ button, input, optgroup, select, textarea {
 
     .hero-img p {
         font-size: 14px;
-    }
+    }*/
 }
 
 @media (max-width: 800px) {
@@ -1054,15 +1054,12 @@ button, input, optgroup, select, textarea {
 
 @media (max-width: 767px) {
 
-    blockquote {
-        font-size: 22px;
-        line-height: 1;
-    }
 
-        blockquote p {
-            line-height: 1.5;
-            letter-spacing: 1px;
-        }
+    blockquote p {
+        line-height: 1.5;
+        letter-spacing: 1px;
+        font-size: 6em;
+    }
 
     section, footer {
         padding: 15px 0;
@@ -1128,14 +1125,6 @@ button, input, optgroup, select, textarea {
         margin-top: 50px;
     }
 
-        .hero-img h1 {
-            margin-bottom: 10px;
-            font-size: 30px;
-        }
-
-        .hero-img p {
-            font-size: 12px;
-        }
 
     /*.header .thumbnails [class*='col-md'] {
         height: 200px;
@@ -1149,13 +1138,35 @@ button, input, optgroup, select, textarea {
         width: 100%;
     }
 
+    .hero-img h1 {
+        margin-bottom: 10px;
+        font-size: 3em;
+    }
+
+    .hero-img p {
+        font-size: 14px;
+    }
+
     .header .thumbnails .item h3 {
         margin-bottom: 5px;
     }
+
+    .top-content h2 {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
 }
 
+@media (max-width: 480px) {
+    .hero-img h1 {
+        font-size:2.5em
+    }
+     }
 
 @media (max-width: 320px) {
+     .hero-img h1 {
+        font-size:2.25em
+    }
     .header .thumbnails .item h3 {
         font-size: 16px;
         font-weight: 400;
