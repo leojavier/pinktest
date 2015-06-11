@@ -140,13 +140,9 @@
     <Content Include="Content\images\pp-logo.png" />
     <Content Include="Content\images\PrimaryPhoto-small.jpg" />
     <Content Include="Content\images\PrimaryPhoto.jpg" />
-    <Content Include="Content\images\PrimaryPhoto.png" />
     <Content Include="Content\images\SecondaryPhoto1.jpg" />
-    <Content Include="Content\images\SecondaryPhoto1.png" />
     <Content Include="Content\images\SecondaryPhoto2.jpg" />
-    <Content Include="Content\images\SecondaryPhoto2.png" />
     <Content Include="Content\images\SecondaryPhoto3.jpg" />
-    <Content Include="Content\images\SecondaryPhoto3.png" />
     <Content Include="Content\images\social.jpg" />
     <Content Include="Content\images\TertiaryPhoto1.png" />
     <Content Include="Content\images\TertiaryPhoto2.png" />
