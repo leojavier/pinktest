@@ -966,7 +966,7 @@ button, input, optgroup, select, textarea {
     }
 
     .social {
-        position: fixed;
+        /*position: fixed;*/
         z-index: 999;
         bottom: 10px;
         left: 0;
@@ -1225,4 +1225,9 @@ button, input, optgroup, select, textarea {
         .author * {
             letter-spacing: 1px !important;
         }
+}
+@media only screen and (max-width: 1160px){
+    #event-video-target{
+        display:none !important;
+    }
 }

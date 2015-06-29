@@ -150,6 +150,7 @@
     <Content Include="Content\images\TertiaryPhoto4.png" />
     <Content Include="Content\images\TertiaryPhoto5.png" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\videos\detailsVideo.mp4" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
